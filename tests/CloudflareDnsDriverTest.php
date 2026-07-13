@@ -96,7 +96,6 @@ final class CloudflareDnsDriverTest extends TestCase
     {
         $reflection = new ReflectionClass($class);
         $prop = $reflection->getProperty($property);
-        $prop->setAccessible(true);
         $prop->setValue(null, $value);
     }
 }
